@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -98,7 +99,6 @@ header {
 }
 
 
-
 .banner-btn {
     padding: 10px 50px;
     font-size: 18px;
@@ -108,8 +108,30 @@ header {
     transition: 0.3s;
 }
 
-.banner-btn:hover{
+.banner-btn:hover {
     color: #ffffff;
     background-color: #bb652d;
     opacity: .8;
+}
+
+
+.slide-desc {
+    width: 40%;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0, -50%);
+}
+
+.me-img{
+    width: 580px;
+    height: 460px;
 }
