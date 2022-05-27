@@ -131,7 +131,23 @@ header {
     transform: translate(0, -50%);
 }
 
-.me-img{
-    width: 580px;
-    height: 460px;
+.therapist-about{
+    right: 0;
+    z-index: 10;
+}
+
+
+.therapist-about h3{
+    width: 200px;
+}
+
+.therapist-about p{
+    width: 200px;
+}
+
+.therapist-img {
+    width: 550px;
+    height: 420px;
+    z-index: 9;
+    left: 0;
 }
