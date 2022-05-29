@@ -151,3 +151,8 @@ header {
     z-index: 9;
     left: 0;
 }
+
+
+.fact-about-me p{
+   list-style: disc;
+}
