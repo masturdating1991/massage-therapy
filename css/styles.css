@@ -131,17 +131,17 @@ header {
     transform: translate(0, -50%);
 }
 
-.therapist-about{
+.therapist-about {
     right: 0;
     z-index: 10;
 }
 
 
-.therapist-about h3{
+.therapist-about h3 {
     width: 200px;
 }
 
-.therapist-about p{
+.therapist-about p {
     width: 200px;
 }
 
@@ -153,6 +153,32 @@ header {
 }
 
 
-.fact-about-me p{
-   list-style: disc;
+.fact-about-me p {
+    list-style: disc;
+}
+
+.image-layer {
+    width: 50%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, .8);
+    top: 0;
+    right: 0;
+    z-index: 1;
+    direction: rtl;
+}
+
+
+
+.image-layer + h2{
+    width: 250px;
+    top: 15%;
+    right:10%;
+    z-index: 10;
+}
+
+.philosophy-desc{
+    width:400px;
+    top: 25%;
+    right:10%;
+    z-index: 10;
 }
