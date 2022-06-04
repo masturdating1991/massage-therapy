@@ -168,17 +168,37 @@ header {
 }
 
 
-
-.image-layer + h2{
+.image-layer + h2 {
     width: 250px;
     top: 15%;
-    right:10%;
+    right: 10%;
     z-index: 10;
 }
 
-.philosophy-desc{
-    width:400px;
+.philosophy-desc {
+    width: 400px;
     top: 25%;
-    right:10%;
+    right: 10%;
     z-index: 10;
+}
+
+.people-say p {
+    font-size: 1.75rem;
+}
+
+.quote-slider {
+    height: 280px;
+}
+
+.quote-slider p {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+    color: #36B5B1;
+}
+
+.swiper-pagination span {
+    background-color: #36B5B1;
 }
