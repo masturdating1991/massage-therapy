@@ -14,7 +14,7 @@
 
 <div class="container-fluid p-0">
     <div class="w-100 p-5 position-relative bg-white">
-        <header class="row">
+        <header class="row ">
             <div class="position-absolute d-none logo">
                 <img src="./img/logo.webp" alt="logo">
             </div>
@@ -70,7 +70,7 @@
     </div>
 
 
-    <section class="row w-100 mx-auto text-center mt-5 bg-white">
+    <section class="row w-100 mx-auto text-center mt-5" style="background-color: #EFF0ED">
         <div class="col-12">
             <h3>تعطیلات خود را به حداکثر برسانید</h3>
             <svg height="10" xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +87,8 @@
         </div>
     </section>
 
-    <section class="row w-100 mx-auto d-flex justify-content-center align-items-center  mb-5 bg-white">
+    <section class="row w-100 mx-auto d-flex justify-content-center align-items-center  mb-5 "
+             style="background-color: #EFF0ED">
         <div class="d-flex flex-column justify-content-center align-items-center">
             <img src="./img/circulation.webp" alt="circulation">
             <p>بهبود گردش خون</p>
@@ -125,28 +126,26 @@
 
         <div class="col-5 mx-auto ">
             <div class="swiper slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide_1 position-relative">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide  position-relative">
                         <img src="./img/1.webp" alt="massage" width="80%">
                         <p class="slide-desc">ماساژ سوئدی</p>
                     </div>
-                    <div class="swiper-slide slide_2  position-relative">
+                    <div class="swiper-slide   position-relative">
                         <img src="./img/2.webp" alt="massage" width="80%">
                         <p class="slide-desc">ماساژ تایلندی</p>
                     </div>
-                    <div class="swiper-slide slide_3 position-relative">
+                    <div class="swiper-slide  position-relative">
                         <img src="./img/3.webp" alt="massage" width="80%">
                         <p class="slide-desc">ماساژ صندلی</p>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </section>
 
 
-    <section class="row w-100 mx-auto mb-5 flex-column bg-secondary">
+    <section class="row w-100 mx-auto mb-5 flex-column " style="background-color: #EFF0ED">
         <div class="col-4 p-0 mx-auto d-flex  position-relative">
             <div class="therapist-about w-25 ">
                 <h3 class="bg-light">درباره تراپیست</h3>
@@ -204,8 +203,8 @@
         </div>
     </section>
 
-    <section class="row m-0 p-0 mt-5">
-        <div class="col-12 p-0 text-center people-say">
+    <section class="row m-0 p-0 mt-5" style="background-color: #EFF0ED">
+        <div class="col-12 p-0 text-center people-say d-flex flex-column justify-content-center align-items-center">
             <p class="font-weight-bold mb-0">مردم چه می گویند؟</p>
             <svg height="10" xmlns="http://www.w3.org/2000/svg">
                 <path id="pathItem"
@@ -215,12 +214,19 @@
                       stroke-width="4"
                       stroke-linecap="round"/>
             </svg>
+
+            <div class="py-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="#36B5B1"
+                          d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+                </svg>
+            </div>
         </div>
 
-        <div class="col-5 mx-auto">
+        <div class="col-5 p-0 mx-auto">
             <div class="swiper quote-slider">
-                <div class="swiper-wrapper ">
-                    <div class="swiper-slide  ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
                         <div class="text-center mt-4 quote-single">
                             <p> متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
                                 مورد نیاز، و
@@ -278,6 +284,41 @@
         </div>
 
     </section>
+
+    <section class="row m-0 p-0 mt-5">
+        <div class="col-12 p-0  bg-danger position-relative" style="height: 40vw">
+            <img class="contact-img" src="./img/contact-us.webp" alt="contact-us" width="100%" height="100%">
+
+            <div class="contact-us w-50  text-center ">
+                <div class="contact-title position-absolute  mx-auto w-25 mb-5 p-5">
+                    <p class="m-0">تماس با ما</p>
+                    <svg height="10" xmlns="http://www.w3.org/2000/svg">
+                        <path id="pathItem"
+                              d="M5 3 Q 23 12 300 8"
+                              stroke="#36B5B1"
+                              fill="transparent"
+                              stroke-width="4"
+                              stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <div class="contact-number position-absolute  mx-auto w-50 mb-5 p-5">
+                    <p class="pt-5">09120000000</p>
+                    <p>lorem@gmail.com</p>
+                    <p>تهران میدان ونک خیابان ونک کوچه ونک پلاک 2 واحد 1</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer class="row m-0 p-0 mt-5" style="background-color: #EFF0ED">
+        <div class="col-12 text-center bg-white p-3">
+            تمامی حقوق این وبسایت متعلق به ماساژ است.
+        </div>
+
+    </footer>
 </div>
 
 

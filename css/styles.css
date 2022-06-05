@@ -11,7 +11,6 @@ html, body {
     height: 100%;
     direction: rtl;
     position: relative;
-    background-color: #E5E8E1;
 }
 
 a, a:hover {
@@ -33,63 +32,6 @@ header {
 .nav-link {
     font-size: 1.2vw;
     font-weight: bold;
-}
-
-@media only screen and (min-width: 1200px) {
-    .logo {
-        display: block !important;
-    }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1300px) {
-    .logo > img {
-        margin-right: 50px !important;
-    }
-}
-
-
-@media only screen and (min-width: 320px) and (max-width: 400px) {
-    .nav-link {
-        font-size: 5vw;
-    }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 820px) {
-    .nav-link {
-        font-size: 3vw;
-    }
-}
-
-
-@media only screen and (min-width: 820px) and (max-width: 1200px) {
-    .nav-link {
-        font-size: 2vw;
-    }
-}
-
-
-@media only screen and (max-width: 1199px) {
-    nav {
-        background-color: #eee;
-    }
-
-    .nav-item {
-        width: 100%;
-        transition: all .3s;
-    }
-
-    .nav-item:not(:last-child) {
-        border-bottom: 1px solid #fff;
-    }
-
-    .nav-item:active {
-        background-color: #fff;
-    }
-
-    .nav-link {
-        font-weight: 500;
-        text-align: center;
-    }
 }
 
 .banner-inside {
@@ -202,3 +144,85 @@ header {
 .swiper-pagination span {
     background-color: #36B5B1;
 }
+
+.contact-img {
+    filter: blur(2px);
+}
+
+.contact-title {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #fff;
+    z-index: 10;
+    border-radius: 3px;
+}
+
+.contact-number {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #EFF0ED;
+    z-index: 1;
+    border-radius: 3px;
+}
+
+
+/*** media queries ***/
+@media only screen and (min-width: 1200px) {
+    .logo {
+        display: block !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+    .logo > img {
+        margin-right: 50px !important;
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+    .nav-link {
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 820px) {
+    .nav-link {
+        font-size: 3vw;
+    }
+}
+
+
+@media only screen and (min-width: 820px) and (max-width: 1200px) {
+    .nav-link {
+        font-size: 2vw;
+    }
+}
+
+
+@media only screen and (max-width: 1199px) {
+    nav {
+        background-color: #eee;
+    }
+
+    .nav-item {
+        width: 100%;
+        transition: all .3s;
+    }
+
+    .nav-item:not(:last-child) {
+        border-bottom: 1px solid #fff;
+    }
+
+    .nav-item:active {
+        background-color: #fff;
+    }
+
+    .nav-link {
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
