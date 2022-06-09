@@ -13,14 +13,14 @@
 <body>
 
 <div class="container-fluid p-0">
-    <div class="w-100 p-5 position-relative bg-white">
+    <div class="w-100 p-4 position-relative bg-white">
         <header class="row ">
             <div class="position-absolute d-none logo">
                 <img src="./img/logo.webp" alt="logo">
             </div>
 
             <div class="col-12 mt-5">
-                <nav class="navbar navbar-expand-xl navbar-light">
+                <nav class="navbar navbar-expand-xl navbar-light" style="z-index: 10">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -46,7 +46,7 @@
         </header>
         <section class="w-100 text-center position-relative mt-5">
             <img src="./img/banner.webp" alt="banner" width="100%" height="auto">
-            <div class="position-absolute banner-inside">
+            <div class="w-100 position-absolute banner-inside">
                 <h1>
                     جوان سازی، آرامش، ریلکس
                 </h1>
@@ -60,19 +60,19 @@
                 </svg>
                 <h3 class="mb-5">ماساژ درمانی در تهران</h3>
 
-                <div class="text-center banner-btn-container">
-                    <a href="#" class="w-100 banner-btn">
-                        سفارش
-                    </a>
-                </div>
+<!--                <div class="text-center">-->
+<!--                    <a href="#" class="w-100 banner-btn">-->
+<!--                        سفارش-->
+<!--                    </a>-->
+<!--                </div>-->
             </div>
         </section>
     </div>
 
 
-    <section class="row w-100 mx-auto text-center mt-5" style="background-color: #EFF0ED">
+    <section class="row w-100 mx-auto text-center mt-5 vacation">
         <div class="col-12">
-            <h3>تعطیلات خود را به حداکثر برسانید</h3>
+            <h1 class="pt-3">تعطیلات خود را به حداکثر برسانید</h1>
             <svg height="10" xmlns="http://www.w3.org/2000/svg">
                 <path id="pathItem"
                       d="M5 3 Q 23 12 300 8"
@@ -81,39 +81,38 @@
                       stroke-width="4"
                       stroke-linecap="round"/>
             </svg>
-            <p>
-                با یک ماساژ درمانی در خانه تعطیلات خود یا در استودیوی جزیره خصوصی ما.
-            </p>
+            <h3>
+                با یک ماساژ درمانی در خانه تعطیلات خود یا در استودیوی جزیره خصوصی ما
+            </h3>
         </div>
     </section>
 
-    <section class="row w-100 mx-auto d-flex justify-content-center align-items-center  mb-5 "
-             style="background-color: #EFF0ED">
-        <div class="d-flex flex-column justify-content-center align-items-center">
+    <section class="row w-100 mx-auto mb-5 massage-effects">
+        <div class="w-100 d-flex flex-column justify-content-center align-items-center">
             <img src="./img/circulation.webp" alt="circulation">
             <p>بهبود گردش خون</p>
         </div>
 
-        <div class="d-flex flex-column justify-content-center align-items-center">
+        <div class="w-100 d-flex flex-column justify-content-center align-items-center">
             <img src="./img/range%20of%20motion.webp" alt="motion">
             <p>افزایش دامنه حرکت</p>
         </div>
 
-        <div class="d-flex flex-column justify-content-center align-items-center">
+        <div class="w-100 d-flex flex-column justify-content-center align-items-center">
             <img src="./img/rejuvenation.webp" alt="rejuvenation">
             <p>ترویج جوانسازی</p>
         </div>
 
-        <div class="d-flex flex-column justify-content-center align-items-center">
+        <div class="w-100 d-flex flex-column justify-content-center align-items-center">
             <img src="./img/enhance-relaxation.webp" alt="relaxation">
             <p>تقویت آرامش</p>
         </div>
     </section>
 
 
-    <section class="row w-100 mx-auto mt-5" style="margin-bottom: 200px">
+    <section class="row w-100 mx-auto mt-5 services" >
         <div class="col-12 text-center mb-5">
-            <h4>خدمات</h4>
+            <h1>خدمات</h1>
             <svg height="10" xmlns="http://www.w3.org/2000/svg">
                 <path id="pathItem"
                       d="M5 3 Q 23 12 300 8"
@@ -124,7 +123,7 @@
             </svg>
         </div>
 
-        <div class="col-5 mx-auto ">
+        <div class="col-sx-8 col-md-6  mx-auto">
             <div class="swiper slider">
                 <div class="swiper-wrapper ">
                     <div class="swiper-slide  position-relative">

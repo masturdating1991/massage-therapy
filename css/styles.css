@@ -1,8 +1,14 @@
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir.woff')
+}
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Vazir, sans-serif;
 }
 
 
@@ -19,7 +25,7 @@ a, a:hover {
 
 
 header {
-    height: 385px;
+    height: 150px;
     z-index: 1;
 }
 
@@ -41,21 +47,36 @@ header {
 }
 
 
-.banner-btn {
-    padding: 10px 50px;
-    font-size: 18px;
-    border-radius: 10px;
-    background-color: #36B5B1;
-    color: #ffffff;
-    transition: 0.3s;
+/*.banner-btn {*/
+/*    padding: 2% 5%;*/
+/*    font-size: 2vw;*/
+/*    border-radius: 10px;*/
+/*    background-color: #36B5B1;*/
+/*    color: #ffffff;*/
+/*    transition: 0.3s;*/
+/*}*/
+
+/*.banner-btn:hover {*/
+/*    color: #ffffff;*/
+/*    background-color: #bb652d;*/
+/*    opacity: .8;*/
+/*}*/
+
+.vacation {
+    background-color: #EFF0ED;
 }
 
-.banner-btn:hover {
-    color: #ffffff;
-    background-color: #bb652d;
-    opacity: .8;
+
+.massage-effects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
+    gap: 5px;
+    background-color: #EFF0ED
 }
 
+.services {
+    margin-bottom: 100px;
+}
 
 .slide-desc {
     width: 40%;
@@ -182,7 +203,7 @@ header {
 }
 
 
-@media only screen and (min-width: 320px) and (max-width: 400px) {
+@media only screen and (min-width: 320px) and (max-width: 599px) {
     .nav-link {
         font-size: 5vw;
     }
@@ -226,3 +247,80 @@ header {
     }
 }
 
+@media only screen and (max-width: 972px) {
+    .banner-inside h1, .vacation h1 , .services h1 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 796px) {
+    .vacation h3 {
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 796px) {
+    .banner-inside h1, .vacation h1, .services h1 {
+        font-size: 1.7rem;
+    }
+
+    .banner-inside h3 {
+        font-size: 1.4rem;
+    }
+
+    .vacation h3 {
+        font-size: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    .banner-inside h1, .vacation h1, .services h1 {
+        font-size: 1.4rem;
+    }
+
+    .banner-inside h3 {
+        font-size: 1.1rem;
+    }
+
+    .vacation h3 {
+        font-size: 0.88rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .banner-inside h1, .vacation h1, .services h1 {
+        font-size: 1.1rem;
+        padding-top: 1rem;
+    }
+
+    .banner-inside h3 {
+        font-size: 0.9rem;
+    }
+
+    .vacation h3 {
+        font-size: 0.78rem;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .banner-inside h1, .vacation h1, .services h1 {
+        width: 100%;
+        font-size: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    .banner-inside h3 {
+        font-size: 0.8rem;
+    }
+
+    .vacation h3 {
+        font-size: 0.68rem;
+    }
+
+    .banner-inside svg {
+        display: none;
+    }
+}
