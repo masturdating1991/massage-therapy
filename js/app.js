@@ -20,3 +20,26 @@ let swiper2 = new Swiper(".quote-slider", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+
+
+const backToTop = document.getElementById('back-top');
+
+document.body.onscroll = () => {
+    let top = document.documentElement.scrollTop;
+    if (top > 700) {
+        backToTop.style.opacity = 1;
+    } else {
+        backToTop.style.opacity = 0;
+    }
+}
+
+backToTop.onclick = () => {
+    let current = document.documentElement.scrollTop;
+    let scroll = setInterval(() => {
+        window.scrollTo(0, current -= 30)
+        if (current < 1) {
+            clearInterval(scroll);
+        }
+    }, 5)
+}

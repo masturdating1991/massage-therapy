@@ -11,6 +11,9 @@
     font-family: Vazir, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
 
 html, body {
     width: 100%;
@@ -41,6 +44,7 @@ header {
 .nav-link {
     font-size: 1.2vw;
     font-weight: bold;
+    color: rgba(0,0,0,.9) !important;
 }
 
 .banner-inside {
@@ -48,6 +52,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 
 /*.banner-btn {*/
@@ -130,13 +135,8 @@ header {
 
 
 .fact-about-me ul li {
-    list-style: disc;
+    list-style: none;
 
-}
-
-.fact-about-me ul li::marker {
-    font-size: 18px;
-    color: #7C5F59;
 }
 
 
@@ -193,21 +193,50 @@ header {
 }
 
 .contact-title {
-    top: 30%;
+    padding: 10px;
+    top: 2%;
     left: 50%;
     transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
     z-index: 10;
     border-radius: 3px;
+    user-select: none;
 }
 
 .contact-number {
-    top: 40%;
+    width: 80%;
+    padding: 0 8px;
+    display: grid;
+    place-items: center;
+    top: 9%;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: #EFF0ED;
     z-index: 1;
     border-radius: 3px;
+}
+
+
+footer {
+    background-color: #EFF0ED;
+}
+
+#back-top {
+    position: fixed;
+    left: 1.5rem;
+    bottom: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: #555;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 3000;
 }
 
 
@@ -519,6 +548,72 @@ header {
 }
 
 
-@media only screen and (max-width: 1080px) {
-
+@media only screen and (max-width: 615px) {
+    .quote-single {
+        margin-top: 0 !important;
+    }
 }
+
+@media only screen and (min-width: 460px) {
+    .contact-title {
+        top: 15%;
+    }
+
+    .contact-number {
+        top: 20%;
+    }
+}
+
+@media only screen and (min-width: 460px) {
+    .contact-title {
+        width: 30%;
+        padding: 15px 20px;
+        top: 20%;
+    }
+
+    .contact-number {
+        height: 12rem;
+        top: 25%;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .contact-title {
+        width: 30%;
+        top: 25%;
+    }
+
+    .contact-number {
+        height: 17rem;
+        top: 30%;
+    }
+}
+
+@media only screen and (min-width: 915px) {
+    .contact-title {
+        width: 30%;
+        top: 27%;
+    }
+
+    .contact-number {
+        width: 60%;
+        height: 17rem;
+        top: 30%;
+    }
+
+    .contact-img {
+        height: 80% !important;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .contact-title {
+        padding: 30px;
+    }
+
+    .contact-number {
+        height: 30rem;
+    }
+}
+
+
