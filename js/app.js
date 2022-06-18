@@ -7,14 +7,10 @@ let swiper1 = new Swiper(".slider", {
 });
 
 
-let swiper2 = new Swiper(".quote-slider", {
+let swiper2 = new Swiper(".video-slider", {
     slidesPerView: 1,
     spaceBetween: 30,
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
+    loop: false,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

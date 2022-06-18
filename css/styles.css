@@ -30,6 +30,7 @@ h1, h2, h3, p {
     color: #7C5F59
 }
 
+
 header {
     height: 150px;
     z-index: 1;
@@ -44,7 +45,7 @@ header {
 .nav-link {
     font-size: 1.2vw;
     font-weight: bold;
-    color: rgba(0,0,0,.9) !important;
+    color: rgba(0, 0, 0, .9) !important;
 }
 
 .banner-inside {
@@ -53,22 +54,6 @@ header {
     transform: translate(-50%, -50%);
 }
 
-
-
-/*.banner-btn {*/
-/*    padding: 2% 5%;*/
-/*    font-size: 2vw;*/
-/*    border-radius: 10px;*/
-/*    background-color: #36B5B1;*/
-/*    color: #ffffff;*/
-/*    transition: 0.3s;*/
-/*}*/
-
-/*.banner-btn:hover {*/
-/*    color: #ffffff;*/
-/*    background-color: #bb652d;*/
-/*    opacity: .8;*/
-/*}*/
 
 .vacation {
     background-color: #EFF0ED;
@@ -171,13 +156,22 @@ header {
 }
 
 
-.quote-slider {
+.video-slider {
     height: 280px;
 }
 
-.quote-slider p {
+.video-single {
+    width: 100%;
+}
+
+.video-slider .video {
     width: 75%;
     margin: 0 auto;
+}
+
+.video iframe {
+    width: 80%;
+    height: 260px;
 }
 
 .swiper-button-prev::after, .swiper-button-next::after {
@@ -549,7 +543,7 @@ footer {
 
 
 @media only screen and (max-width: 615px) {
-    .quote-single {
+    .video-single {
         margin-top: 0 !important;
     }
 }
